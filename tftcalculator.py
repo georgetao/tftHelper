@@ -15,9 +15,6 @@ def calculate(unitsTaken, numLevelTaken, levelOfUnit, level, gold):
 	numRolls = gold // 2
 	odds = tftOdds[level-1][levelOfUnit-1]
 
-	#not figured out yet
-	numLevelTaken = unitsTaken
-
 	pctOfLevel = float(poolSize[levelOfUnit-1] - unitsTaken) / float(numUnits[levelOfUnit-1] - numLevelTaken)
 	
 	#kinda Inaccurate
